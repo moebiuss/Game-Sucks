@@ -953,7 +953,7 @@ MonoBehaviour:
   m_Version: 
   UpdateIn: 0
   m_PositionMode: 1
-  m_Position: 53.7
+  m_Position: 4.35
   m_MoveMode: 1
   m_Speed: 6.5
   m_Direction: 0
@@ -1029,33 +1029,20 @@ MonoBehaviour:
     Event:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 127394973}
-          m_TargetAssemblyTypeName: FluffyUnderware.Curvy.Controllers.CurvyController,
-            Assembly-CSharp-firstpass
-          m_MethodName: set_Speed
+        - m_Target: {fileID: 127394972}
+          m_TargetAssemblyTypeName: FluffyUnderware.Curvy.Controllers.PetController,
+            Assembly-CSharp
+          m_MethodName: SlowMotionEffect
           m_Mode: 4
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
-            m_FloatArgument: 3
+            m_FloatArgument: 0.5
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 1268381341}
-          m_TargetAssemblyTypeName: FluffyUnderware.Curvy.Controllers.CurvyController,
-            Assembly-CSharp-firstpass
-          m_MethodName: set_Speed
-          m_Mode: 4
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 3
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-    Position: 64.91
+    Position: 66.92
     PositionMode: 1
     TriggeringDirections: 0
     GizmoColor: {r: 0.652, g: 0.652, b: 0.652, a: 1}
@@ -1103,6 +1090,28 @@ MonoBehaviour:
     TriggeringDirections: 0
     GizmoColor: {r: 0.652, g: 0.652, b: 0.652, a: 1}
     initialized: 1
+  - Name: Normalize Speed
+    Event:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 127394972}
+          m_TargetAssemblyTypeName: FluffyUnderware.Curvy.Controllers.PetController,
+            Assembly-CSharp
+          m_MethodName: SlowMotionEffect
+          m_Mode: 4
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 1
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    Position: 75.8
+    PositionMode: 1
+    TriggeringDirections: 0
+    GizmoColor: {r: 1, g: 0.9742207, b: 0, a: 1}
+    initialized: 1
   - Name: Lower Speed
     Event:
       m_PersistentCalls:
@@ -1129,29 +1138,16 @@ MonoBehaviour:
     Event:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 127394973}
-          m_TargetAssemblyTypeName: FluffyUnderware.Curvy.Controllers.CurvyController,
-            Assembly-CSharp-firstpass
-          m_MethodName: set_Speed
+        - m_Target: {fileID: 127394972}
+          m_TargetAssemblyTypeName: FluffyUnderware.Curvy.Controllers.PetController,
+            Assembly-CSharp
+          m_MethodName: SlowMotionEffect
           m_Mode: 4
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
-            m_FloatArgument: 3
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 1268381341}
-          m_TargetAssemblyTypeName: FluffyUnderware.Curvy.Controllers.CurvyController,
-            Assembly-CSharp-firstpass
-          m_MethodName: set_Speed
-          m_Mode: 4
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 3
+            m_FloatArgument: 0.5
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
@@ -1185,64 +1181,16 @@ MonoBehaviour:
     Event:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 127394973}
-          m_TargetAssemblyTypeName: FluffyUnderware.Curvy.Controllers.CurvyController,
-            Assembly-CSharp-firstpass
-          m_MethodName: set_Speed
+        - m_Target: {fileID: 127394972}
+          m_TargetAssemblyTypeName: FluffyUnderware.Curvy.Controllers.PetController,
+            Assembly-CSharp
+          m_MethodName: SlowMotionEffect
           m_Mode: 4
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
-            m_FloatArgument: 6.5
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 1268381341}
-          m_TargetAssemblyTypeName: FluffyUnderware.Curvy.Controllers.CurvyController,
-            Assembly-CSharp-firstpass
-          m_MethodName: set_Speed
-          m_Mode: 4
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 5
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-    Position: 75.8
-    PositionMode: 1
-    TriggeringDirections: 0
-    GizmoColor: {r: 1, g: 0.9742207, b: 0, a: 1}
-    initialized: 1
-  - Name: Normalize Speed
-    Event:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 127394973}
-          m_TargetAssemblyTypeName: FluffyUnderware.Curvy.Controllers.CurvyController,
-            Assembly-CSharp-firstpass
-          m_MethodName: set_Speed
-          m_Mode: 4
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 6.5
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 1268381341}
-          m_TargetAssemblyTypeName: FluffyUnderware.Curvy.Controllers.CurvyController,
-            Assembly-CSharp-firstpass
-          m_MethodName: set_Speed
-          m_Mode: 4
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 5
+            m_FloatArgument: 1
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
@@ -2450,7 +2398,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 20, y: 0}
+  m_SizeDelta: {x: 2954.1772, y: 3589.031}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &486001128
 MonoBehaviour:
@@ -2465,7 +2413,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -3717,7 +3665,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 62b4ca501ef497947aee5d17c22e6a1f, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.8534
+      value: 1.1625868
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 62b4ca501ef497947aee5d17c22e6a1f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3725,7 +3673,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 62b4ca501ef497947aee5d17c22e6a1f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.7887
+      value: 1.8724
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 62b4ca501ef497947aee5d17c22e6a1f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5488,7 +5436,7 @@ MonoBehaviour:
   - {fileID: 854949176}
   - {fileID: 392496963}
   ShowGizmos: 1
-  m_Interpolation: 0
+  m_Interpolation: 1
   m_RestrictTo2D: 0
   restricted2DPlane: 0
   m_Closed: 0
@@ -5564,7 +5512,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7a0010a2005c9f54193ccd928b2d5819, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.8534
+      value: 1.1625868
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7a0010a2005c9f54193ccd928b2d5819, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5572,7 +5520,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7a0010a2005c9f54193ccd928b2d5819, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.7887
+      value: 1.8724
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7a0010a2005c9f54193ccd928b2d5819, type: 3}
       propertyPath: m_LocalPosition.z
@@ -7582,8 +7530,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1268381335}
-  m_LocalRotation: {x: -0, y: 0.708041, z: -0, w: 0.70617133}
-  m_LocalPosition: {x: -8.919308, y: 8.157658, z: 16.914452}
+  m_LocalRotation: {x: -0, y: 0.012861315, z: -0, w: 0.9999173}
+  m_LocalPosition: {x: -29.447994, y: 8.157658, z: -6.048542}
   m_LocalScale: {x: 1.0884, y: 1.0884, z: 1.0884}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -7604,6 +7552,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   splineController: {fileID: 0}
+  _movementClampNegative: -2
+  _movementClampPositive: 2
+  horizontalSpeed: 5
 --- !u!114 &1268381341
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7619,7 +7570,7 @@ MonoBehaviour:
   m_Version: 
   UpdateIn: 0
   m_PositionMode: 1
-  m_Position: 42.8
+  m_Position: 0
   m_MoveMode: 1
   m_Speed: 5
   m_Direction: 0
@@ -9049,14 +9000,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 0}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -9722,7 +9673,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -9967,7 +9918,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4636144365045120, guid: b51b12985bfcaa54491532f0abaefdb4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.9806557
+      value: -29.598103
       objectReference: {fileID: 0}
     - target: {fileID: 4636144365045120, guid: b51b12985bfcaa54491532f0abaefdb4, type: 3}
       propertyPath: m_LocalPosition.y
@@ -9975,11 +9926,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4636144365045120, guid: b51b12985bfcaa54491532f0abaefdb4, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 16.885582
+      value: -1.7029724
       objectReference: {fileID: 0}
     - target: {fileID: 4636144365045120, guid: b51b12985bfcaa54491532f0abaefdb4, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.70617133
+      value: 0.9996339
       objectReference: {fileID: 0}
     - target: {fileID: 4636144365045120, guid: b51b12985bfcaa54491532f0abaefdb4, type: 3}
       propertyPath: m_LocalRotation.x
@@ -9987,7 +9938,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4636144365045120, guid: b51b12985bfcaa54491532f0abaefdb4, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.708041
+      value: -0.027057745
       objectReference: {fileID: 0}
     - target: {fileID: 4636144365045120, guid: b51b12985bfcaa54491532f0abaefdb4, type: 3}
       propertyPath: m_LocalRotation.z

@@ -11,12 +11,16 @@ namespace FluffyUnderware.Curvy.Controllers
         [SerializeField] SplineController splineController;
         float delay;
         [SerializeField] GameObject Furr;
+        bool behind;
         void Start()
         {
             PlaySequence();
             animator = GetComponent<Animator>();
         }
-        
+        public void SlowMotionEffect(float timePass)
+        {
+            Time.timeScale = timePass;
+        }
         public void LookBack()
         {
             splineController.enabled = false;
@@ -25,7 +29,7 @@ namespace FluffyUnderware.Curvy.Controllers
         void TurnBack()
         {
             animator.SetTrigger("Turn Left");
-            transform.DORotate(new Vector3(transform.rotation.x,transform.rotation.y-90,transform.rotation.z),2.083f/2);
+            transform.DORotate(new Vector3(transform.rotation.x, transform.rotation.y - 90, transform.rotation.z), 2.083f / 2);
         }
         public void ContinuePath()
         {
@@ -43,6 +47,7 @@ namespace FluffyUnderware.Curvy.Controllers
         }
         void Update()
         {
+
         }
     }
 }

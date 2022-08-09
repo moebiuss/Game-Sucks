@@ -14,7 +14,7 @@ public class PlayerController : MonoBehaviour
     public float MoveFactorX => _moveFactorX;
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -42,6 +42,8 @@ public class PlayerController : MonoBehaviour
         else if (Input.GetMouseButton(0))
         {
             _moveFactorX = Input.mousePosition.x - _lastFrameFingerPositionX;
+            _moveFactorX = Mathf.Clamp(MoveFactorX, -2, 2);
+            print(_moveFactorX);
             _lastFrameFingerPositionX = Input.mousePosition.x;
         }
         else if (Input.GetMouseButtonUp(0))
@@ -49,7 +51,7 @@ public class PlayerController : MonoBehaviour
             _moveFactorX = 0f;
         }
         float swerveAmount = Time.deltaTime * swerveSpeed * MoveFactorX;
-        transform.Translate(swerveAmount, 0, 0);
+        //transform.Translate(swerveAmount, 0, 0);
     }
 
     private void HorizontalMovementMobile()
@@ -63,8 +65,9 @@ public class PlayerController : MonoBehaviour
                 Vector2 touchPos = _theTouch.deltaPosition;
                 if (touchPos != Vector2.zero)
                 {
-                    transform.Translate(touchPos.x * (horizontalSpeed / 100) * Time.deltaTime, 0, 0);
-                    transform.position = new Vector3(Mathf.Clamp(transform.position.x, _movementClampNegative, _movementClampPositive), transform.position.y, transform.position.z);
+                    
+                    //transform.Translate(touchPos.x * (horizontalSpeed / 100) * Time.deltaTime, 0, 0);
+                    //transform.position = new Vector3(Mathf.Clamp(transform.position.x, _movementClampNegative, _movementClampPositive), transform.position.y, transform.position.z);
                 }
             }
         }

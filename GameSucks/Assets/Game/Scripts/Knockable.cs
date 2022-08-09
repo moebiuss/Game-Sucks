@@ -17,7 +17,6 @@ public class Knockable : MonoBehaviour
         transform.DORotate(FallAngle, FallSpeed);
         if(FallSpot != Vector3.zero)
         transform.DOMove(FallSpot,FallSpeed);
-        
         foreach (var item in GetComponentsInChildren<Rigidbody>())
         {
             item.isKinematic = false;
